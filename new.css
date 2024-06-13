@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    
+}
+
+.insta{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.insta img{
+    width: 60px;
+}
+
+.meals{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.meals div{
+    background-color: blue;
+    height: 200px;
+    width: 350px;
+}
+
+
+
+.rate h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.rate span{
+    color: red;
+}

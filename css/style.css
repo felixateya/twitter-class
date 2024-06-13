@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainSec {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.leftSec {
+  width: 50%;
+  height: 100vh;
+  background-image: url(../Images/defcover.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+.rightSec {
+  width: 50%;
+  height: 100%;
+background-color: #f2f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rightSec h5 {
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.myBtn {
+  width: 100%;
+  margin: 20px auto;
+}
+
+button:disabled{
+  cursor: not-allowed;
+}
+button{
+  cursor:pointer;
+}
+.rightSec a {
+  text-align: center;
+}
+
+/* home section */
+
+.homeSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.tweetSection {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-left: 1px rgba(128, 128, 128, 0.168) solid;
+  border-right: 1px rgba(128, 128, 128, 0.168) solid;
+}
+
+.homeLeft {
+  width: 24%;
+  height: 100%;
+  overflow: auto;
+}
+
+.homeRight {
+  width: 33%;
+  height: 100%;
+}
+
+.profilePlaceholder {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.tweetBox {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.tweetBox input {
+  width: 90%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.tweetBox textarea {
+  width: 90%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.tweetButtons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px rgba(128, 128, 128, 0.168) solid;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.tweetButtons button {
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.topTweetBox {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.twitter-logo{
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.homeLeft {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.homeLeft button {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.bottomProfileCont {
+  display: flex;
+  margin-top: 50px;
+}
+
+.bottomProfile p {
+  margin: 0;
+  padding: 0;
+  animation: slide 0.9s linear ease-in-out;
+}
+
+.bottomProfile {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-100%);
+  };
+  from {
+    transform: translateX(0);
+    color: red;
+  }
+}
+
+.bottomProfileCont:hover {
+  background-color: rgba(128, 128, 128, 0.124);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#username {
+  font-weight: bold;
+}
+
+.homeBtns {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.theLogo {
+  display: none;
+}
+
+.midMenu div {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.coverImage {
+  background-image: url(../Images/600x200.jfif);
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.mainProfImage {
+  height: 150px;
+  width: 150px;
+  background-image: url(../Images/defaultprofile.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  background-position: center;
+  top: 180px;
+  left: 25px;
+  z-index: 11;
+
+  border: 5px white solid;
+}
+
+.edtBtn {
+  position: absolute;
+  right: 10px;
+
+  text-decoration: none;
+  border: gray 1px solid;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: black;
+
+  cursor: pointer;
+}
+
+.profSection {
+  position: relative;
+}
+
+.profContent {
+  position: absolute;
+  top: 350px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+#profUserNamed {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#profName {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+#allTweetsContainer{
+  overflow-y: auto;
+  height: 80vh;
+
+  padding-bottom: 80px;
+}
+
+#allCommentsContainer {
+  overflow-y: auto;
+  height: 20%;
+  padding-bottom: 80px;
+}
+
+.profilePlaceholderHome {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  object-fit: cover;
+  object-position: center;
+  }
+  .profilePlaceholderHome img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  object-fit: cover;
+object-position: center;
+}
+
+
+
+.moreImage {
+  height: 30px;
+  cursor: pointer;
+}
+
+.likeIcon {
+  font-size:28px;
+  margin: 0 4px;
+  cursor: pointer;
+  }
+  
+  .my-icons{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    /* justify-content: space-between; */
+    }
+    
+    .my-icons h6{
+  margin: 0 40px;
+  display: flex;
+}
+
+.textBox {
+  position: fixed;
+  bottom: 0px;
+  width: 43%;
+  border-top: rgba(128, 128, 128, 0.124) 1px solid;
+}
+
+.messImgCont {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.messImgCont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#showAllUsers {
+  padding-top: 50px;
+}
+
+.messUserCont {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.168);
+}
+
+.messUserCont:hover {
+  background-color: rgba(220, 220, 220, 0.271);
+}
+
+.messUserCont h6 {
+  margin-left: 20px;
+}
+
+.messUserCont p {
+  margin-left: 20px;
+}
+
+.myMsgSent {
+  background-color: greenyellow;
+  position: absolute;
+  right: 0;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin: 20px;
+}
+
+.myMsgReceived {
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin: 20px;
+  background-color: rgba(128, 128, 128, 0.325);
+  width: fit-content;
+}
